@@ -1,0 +1,120 @@
+/* Reset default margin and padding */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #050404;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+.container {
+    background: #ffffff33;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #278cff;
+    box-shadow: 0 1px 10px rgba(4, 121, 255, 0.849);
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-item {
+    background-color: #278cff;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background 0.3s ease;
+    box-shadow: 1px 8px 1px black;
+}
+
+.link-item:active{
+    transform: translateY(2px);
+}
+
+.link-item:hover {
+    background-color: transparent;
+    border: 2px solid #278cff;
+    color: #278cff;
+}
+
+.footer p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: transparent;
+}
