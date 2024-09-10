@@ -14,4 +14,31 @@ setTimeout(() => {
   });
 }, 3000);
 
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.getElementById('toggleButton');
+  const backgroundVideo = document.getElementById('backgroundVideo');
+  const body = document.body;
+  let audio = new Audio("lagu.mp3")
+
+  let isVideoVisible = false;
+
+  toggleButton.addEventListener('click', () => {
+      if (isVideoVisible) {
+       
+          backgroundVideo.style.display = 'none';
+          audio.pause()
+          
+      } else {
+       
+          backgroundVideo.style.display = 'block';
+          body.style.backgroundColor = 'transparent';
+          audio.play()
+          audio.loop = true
+      }
+
+     
+      isVideoVisible = !isVideoVisible;
+  });
+});
+
     
